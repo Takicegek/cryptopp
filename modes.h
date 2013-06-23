@@ -100,7 +100,7 @@ public:
 
 protected:
 	unsigned int GetBytesPerIteration() const {return m_feedbackSize;}
-	byte * GetRegisterBegin() {return m_register + BlockSize() - m_feedbackSize;}
+	byte * GetRegisterBegin() {return ((byte *)m_register) + BlockSize() - m_feedbackSize;}
 	bool CanIterate() const {return m_feedbackSize == BlockSize();}
 	void Iterate(byte *output, const byte *input, CipherDir dir, size_t iterationCount);
 	void TransformRegister();

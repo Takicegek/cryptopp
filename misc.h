@@ -1,3 +1,8 @@
+
+#ifndef _WIN32
+#pragma GCC system_header
+#endif //_WIN32
+
 #ifndef CRYPTOPP_MISC_H
 #define CRYPTOPP_MISC_H
 

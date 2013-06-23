@@ -2,6 +2,8 @@
 
 #include "pch.h"
 
+#pragma GCC diagnostic ignored "-Wunused"
+
 #ifndef CRYPTOPP_IMPORTS
 
 #include "cryptlib.h"

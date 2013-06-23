@@ -1,7 +1,7 @@
 CXXFLAGS = -DNDEBUG -g -O2
 #CXXFLAGS = -g
 # -fPIC is supported. Please report any breakage of -fPIC as a bug.
-# CXXFLAGS += -fPIC
+CXXFLAGS += -fPIC
 # the following options reduce code size, but breaks link or makes link very slow on some systems
 # CXXFLAGS += -ffunction-sections -fdata-sections
 # LDFLAGS += -Wl,--gc-sections
@@ -145,6 +145,11 @@ install:
 	$(CP) *.a $(PREFIX)/lib
 	$(CP) *.so $(PREFIX)/lib
 	$(CP) *.exe $(PREFIX)/bin
+
+install.so:
+	$(MKDIR) -p $(PREFIX)/include/cryptopp $(PREFIX)/lib $(PREFIX)/bin
+	$(CP) *.h $(PREFIX)/include/cryptopp
+	$(CP) *.so $(PREFIX)/lib
 
 libcryptopp.a: $(LIBOBJS)
 	$(AR) $(ARFLAGS) $@ $(LIBOBJS)

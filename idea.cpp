@@ -1,5 +1,7 @@
 // idea.cpp - written and placed in the public domain by Wei Dai
 
+#pragma GCC diagnostic ignored "-Wunused"
+
 #include "pch.h"
 #include "idea.h"
 #include "misc.h"

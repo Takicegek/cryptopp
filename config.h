@@ -301,6 +301,11 @@ NAMESPACE_END
 	#define CRYPTOPP_BOOL_ALIGN16_ENABLED 0
 #endif
 
+#if defined(__IPHONE_OS_VERSION_MIN_REQUIRED) || defined(PRODUCT_iPhone)
+# undef CRYPTOPP_BOOL_ALIGN16_ENABLED
+# define CRYPTOPP_BOOL_ALIGN16_ENABLED 0
+#endif
+
 // how to allocate 16-byte aligned memory (for SSE2)
 #if defined(CRYPTOPP_MSVC6PP_OR_LATER)
 	#define CRYPTOPP_MM_MALLOC_AVAILABLE

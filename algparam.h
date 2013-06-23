@@ -1,3 +1,8 @@
+
+#ifndef _WIN32
+#pragma GCC system_header
+#endif //_WIN32
+
 #ifndef CRYPTOPP_ALGPARAM_H
 #define CRYPTOPP_ALGPARAM_H
 
