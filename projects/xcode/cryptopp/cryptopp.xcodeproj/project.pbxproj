@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0066842216C9DC6100259F81 /* 3way.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006682A816C9DC6000259F81 /* 3way.cpp */; };
-		0066842416C9DC6100259F81 /* adhoc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006682AA16C9DC6000259F81 /* adhoc.cpp */; };
 		0066842516C9DC6100259F81 /* adler32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006682AC16C9DC6000259F81 /* adler32.cpp */; };
 		0066842816C9DC6100259F81 /* algebra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006682AF16C9DC6000259F81 /* algebra.cpp */; };
 		0066842A16C9DC6100259F81 /* algparam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006682B116C9DC6000259F81 /* algparam.cpp */; };
@@ -136,7 +135,6 @@
 		006682A016C9DC3D00259F81 /* libcryptopp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libcryptopp.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		006682A816C9DC6000259F81 /* 3way.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = 3way.cpp; sourceTree = "<group>"; };
 		006682A916C9DC6000259F81 /* 3way.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = 3way.h; sourceTree = "<group>"; };
-		006682AA16C9DC6000259F81 /* adhoc.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adhoc.cpp; sourceTree = "<group>"; };
 		006682AB16C9DC6000259F81 /* adhoc.cpp.proto */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adhoc.cpp.proto; sourceTree = "<group>"; };
 		006682AC16C9DC6000259F81 /* adler32.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adler32.cpp; sourceTree = "<group>"; };
 		006682AD16C9DC6000259F81 /* adler32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adler32.h; sourceTree = "<group>"; };
@@ -145,7 +143,6 @@
 		006682B016C9DC6000259F81 /* algebra.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algebra.h; sourceTree = "<group>"; };
 		006682B116C9DC6000259F81 /* algparam.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = algparam.cpp; sourceTree = "<group>"; };
 		006682B216C9DC6000259F81 /* algparam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = algparam.h; sourceTree = "<group>"; };
-		006682B316C9DC6000259F81 /* Android.mk */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Android.mk; sourceTree = "<group>"; };
 		006682B416C9DC6000259F81 /* arc4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arc4.cpp; sourceTree = "<group>"; };
 		006682B516C9DC6000259F81 /* arc4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arc4.h; sourceTree = "<group>"; };
 		006682B616C9DC6000259F81 /* argnames.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = argnames.h; sourceTree = "<group>"; };
@@ -544,7 +541,6 @@
 			children = (
 				006682A816C9DC6000259F81 /* 3way.cpp */,
 				006682A916C9DC6000259F81 /* 3way.h */,
-				006682AA16C9DC6000259F81 /* adhoc.cpp */,
 				006682AB16C9DC6000259F81 /* adhoc.cpp.proto */,
 				006682AC16C9DC6000259F81 /* adler32.cpp */,
 				006682AD16C9DC6000259F81 /* adler32.h */,
@@ -553,7 +549,6 @@
 				006682B016C9DC6000259F81 /* algebra.h */,
 				006682B116C9DC6000259F81 /* algparam.cpp */,
 				006682B216C9DC6000259F81 /* algparam.h */,
-				006682B316C9DC6000259F81 /* Android.mk */,
 				006682B416C9DC6000259F81 /* arc4.cpp */,
 				006682B516C9DC6000259F81 /* arc4.h */,
 				006682B616C9DC6000259F81 /* argnames.h */,
@@ -1001,7 +996,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0066842216C9DC6100259F81 /* 3way.cpp in Sources */,
-				0066842416C9DC6100259F81 /* adhoc.cpp in Sources */,
 				0066842516C9DC6100259F81 /* adler32.cpp in Sources */,
 				0066842816C9DC6100259F81 /* algebra.cpp in Sources */,
 				0066842A16C9DC6100259F81 /* algparam.cpp in Sources */,
