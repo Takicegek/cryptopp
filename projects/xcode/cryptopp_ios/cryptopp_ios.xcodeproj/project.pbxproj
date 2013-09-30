@@ -130,6 +130,7 @@
 		0066884A16C9F5D900259F81 /* zdeflate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C016C9F5D800259F81 /* zdeflate.cpp */; };
 		0066884B16C9F5D900259F81 /* zinflate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C216C9F5D800259F81 /* zinflate.cpp */; };
 		0066884C16C9F5D900259F81 /* zlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C416C9F5D800259F81 /* zlib.cpp */; };
+		00B1F2D417F9F8C10062BE55 /* sha3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B1F2D317F9F8C10062BE55 /* sha3.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -520,6 +521,8 @@
 		006687C316C9F5D800259F81 /* zinflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zinflate.h; sourceTree = "<group>"; };
 		006687C416C9F5D800259F81 /* zlib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = zlib.cpp; sourceTree = "<group>"; };
 		006687C516C9F5D800259F81 /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		00B1F2D317F9F8C10062BE55 /* sha3.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sha3.cpp; sourceTree = "<group>"; };
+		00B1F2D517F9F8D40062BE55 /* sha3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = sha3.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -779,6 +782,8 @@
 				0066872E16C9F5D700259F81 /* serpentp.h */,
 				0066872F16C9F5D700259F81 /* sha.cpp */,
 				0066873016C9F5D700259F81 /* sha.h */,
+				00B1F2D317F9F8C10062BE55 /* sha3.cpp */,
+				00B1F2D517F9F8D40062BE55 /* sha3.h */,
 				0066873116C9F5D700259F81 /* shacal2.cpp */,
 				0066873216C9F5D700259F81 /* shacal2.h */,
 				0066873316C9F5D800259F81 /* shark.cpp */,
@@ -1121,6 +1126,7 @@
 				0066884A16C9F5D900259F81 /* zdeflate.cpp in Sources */,
 				0066884B16C9F5D900259F81 /* zinflate.cpp in Sources */,
 				0066884C16C9F5D900259F81 /* zlib.cpp in Sources */,
+				00B1F2D417F9F8C10062BE55 /* sha3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
