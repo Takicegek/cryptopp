@@ -1,24 +1,30 @@
 #!/bin/sh
-echo "Please enter your android ndk path:"
-echo "For example:/home/astro/android-ndk-r8e"
-read Input
-echo "You entered:$Input"
+if [[ $1 == *android-ndk-* ]]; then
+	echo "----------------- NDK Path is : $1 ----------------"
+	Input=$1;
+else
+	echo "Please enter your android ndk path:"
+	echo "For example:/home/astro/android-ndk-r8e"
+	read Input
+	echo "You entered:$Input"
 
-echo "----------------- Exporting the android-ndk path ----------------"
+	echo "----------------- Exporting the android-ndk path ----------------"
+fi
 
 #Set path
 export PATH=$PATH:$Input:$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin
 
 #create install directories
-mkdir ./../../../build
-mkdir ./../../../build/android
-mkdir ./../../../../ortc/build
-mkdir ./../android
+mkdir -p ./../android
+mkdir -p ./../../../build
+mkdir -p ./../../../build/android
+
 
 #cryptopp module build
 echo "------ Building cryptopp 5.6.2 for ANDROID platform ------"
 pushd `pwd`
-mkdir ./../../../build/android/cryptopp
+mkdir -p ./../../../build/android/cryptopp
+mkdir -p ./../../../build/android/cryptopp/include
 
 cd ./../android
 rm -rf *
@@ -48,4 +54,9 @@ popd
 
 echo "-------- Installing cryptopp libs -----"
 cp -r ./../../../cryptopp/projects/android/lib* ./../../../build/android/cryptopp/
+cp -r ./../../../cryptopp/projects/android/*.h ./../../../build/android/cryptopp/include
+
+#clean
+rm -rf ./../android
+
 
