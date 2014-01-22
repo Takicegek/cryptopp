@@ -1,5 +1,20 @@
 #!/bin/sh
-if [[ $1 == *android-ndk-* ]]; then
+
+#Note [TBD] : There is no check for ndk-version
+#Please use the ndk-version as per host machine for now
+
+#Get the machine type
+PROCTYPE=`uname -m`
+
+if [ "$PROCTYPE" = "i686" ] || [ "$PROCTYPE" = "i386" ] || [ "$PROCTYPE" = "i586" ] ; then
+        echo "Host machine : x86"
+        ARCHTYPE="x86"
+else
+        echo "Host machine : x86_64"
+        ARCHTYPE="x86_64"
+fi
+
+if [[ $1 == *ndk* ]]; then
 	echo "----------------- NDK Path is : $1 ----------------"
 	Input=$1;
 else
@@ -12,7 +27,11 @@ else
 fi
 
 #Set path
-export PATH=$PATH:$Input:$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin
+if [ "$ARCHTYPE" = "x86" ] ; then
+		export PATH=$PATH:$Input:$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin
+else
+        export PATH=$PATH:$Input:$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86_64/bin
+fi
 
 #create install directories
 mkdir -p ./../android
@@ -36,7 +55,11 @@ unzip -a Config.h.patch.zip
 #export ANDROID_STL_LIB=$Input/sources/cxx-stl/stlport/libs/armeabi/libstlport_shared.so
 export ANDROID_STL_LIB=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/libgnustl_shared.so
 export ANDROID_NDK_ROOT=$Input
-export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin
+if [ "$ARCHTYPE" = "x86" ] ; then
+	export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin
+else 
+    export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86_64/bin	
+fi
 #export ANDROID_STL_INC=$Input/sources/cxx-stl/stlport/stlport/
 export ANDROID_STL_INC=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/include
 export ANDROID_STL_INC_2=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include
