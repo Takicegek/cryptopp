@@ -38,7 +38,7 @@ fi
 
 #Set path
 echo "----------------- Exporting the android-ndk path ----------------"
-export PATH=$PATH:$Input:$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/$HOST_OS-$ARCHTYPE/bin
+export PATH=$PATH:$Input:$Input/toolchains/arm-linux-androideabi-4.7/prebuilt/$HOST_OS-$ARCHTYPE/bin
 
 #create install directories
 mkdir -p ./../android
@@ -60,18 +60,18 @@ unzip -a GNUmakefile-android.patch.zip
 unzip -a Config.h.patch.zip
 
 #export ANDROID_STL_LIB=$Input/sources/cxx-stl/stlport/libs/armeabi/libstlport_shared.so
-export ANDROID_STL_LIB=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/libgnustl_shared.so
+export ANDROID_STL_LIB=$Input/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi/libgnustl_shared.so
 export ANDROID_NDK_ROOT=$Input
 if [ "$ARCHTYPE" = "x86" ] ; then
-	export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86/bin
+	export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86/bin
 else 
-    export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.4.3/prebuilt/linux-x86_64/bin	
+    export ANDROID_TOOLCHAIN=$Input/toolchains/arm-linux-androideabi-4.7/prebuilt/linux-x86_64/bin	
 fi
 #export ANDROID_STL_INC=$Input/sources/cxx-stl/stlport/stlport/
-export ANDROID_STL_INC=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/include
-export ANDROID_STL_INC_2=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/include
+export ANDROID_STL_INC=$Input/sources/cxx-stl/gnu-libstdc++/4.7/include
+export ANDROID_STL_INC_2=$Input/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi/include
 #export ANDROID_STL_LIB=$Input/sources/cxx-stl/stlport/libs/armeabi/libstlport_static.a:$ANDROID_STL_LIB
-export ANDROID_STL_LIB=$Input/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi/libgnustl_static.a:$ANDROID_STL_LIB
+export ANDROID_STL_LIB=$Input/sources/cxx-stl/gnu-libstdc++/4.7/libs/armeabi/libgnustl_static.a:$ANDROID_STL_LIB
 export ANDROID_SYSROOT=$Input/platforms/android-9/arch-arm
 export IS_ANDROID=1
 export IS_CROSS_COMPILE=1
