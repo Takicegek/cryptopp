@@ -5,6 +5,9 @@
 #include "queue.h"
 #include <vector>
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wshorten-64-to-32"
+
 NAMESPACE_BEGIN(CryptoPP)
 
 // these tags and flags are not complete
@@ -365,5 +368,7 @@ inline ::CryptoPP::OID operator+(const ::CryptoPP::OID &lhs, unsigned long rhs)
 	{return ::CryptoPP::OID(lhs)+=rhs;}
 
 NAMESPACE_END
+
+#pragma clang diagnostic pop
 
 #endif
