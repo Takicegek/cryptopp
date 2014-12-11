@@ -14,6 +14,9 @@
 #elif __QNX__
 #include <sys/select.h>
 #include <sys/types.h>
+#elif _ANDROID
+#include <sys/select.h>
+#include <sys/types.h>
 #else
 #include <sys/types.h>
 #endif
