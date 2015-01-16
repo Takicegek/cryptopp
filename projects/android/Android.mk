@@ -33,8 +33,6 @@ authenc.cpp \
 base32.cpp \
 base64.cpp \
 basecode.cpp \
-bench.cpp \
-bench2.cpp \
 bfinit.cpp \
 blowfish.cpp \
 blumshub.cpp \
@@ -49,7 +47,6 @@ cpu.cpp \
 crc.cpp \
 cryptlib.cpp \
 cryptlib_bds.cpp \
-datatest.cpp \
 default.cpp \
 des.cpp \
 dessp.cpp \
@@ -136,16 +133,12 @@ square.cpp \
 squaretb.cpp \
 strciphr.cpp \
 tea.cpp \
-test.cpp \
 tftables.cpp \
 tiger.cpp \
 tigertab.cpp \
 trdlocal.cpp \
 ttmac.cpp \
 twofish.cpp \
-validat1.cpp \
-validat2.cpp \
-validat3.cpp \
 vmac.cpp \
 wait.cpp \
 wake.cpp \
