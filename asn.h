@@ -5,6 +5,11 @@
 #include "queue.h"
 #include <vector>
 
+#ifdef _WIN32
+#pragma warning(push)
+#pragma warning(disable:4068)
+#endif //_WIN32
+
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wshorten-64-to-32"
 
@@ -370,5 +375,9 @@ inline ::CryptoPP::OID operator+(const ::CryptoPP::OID &lhs, unsigned long rhs)
 NAMESPACE_END
 
 #pragma clang diagnostic pop
+
+#ifdef _WIN32
+#pragma warning(pop)
+#endif //_WIN32
 
 #endif

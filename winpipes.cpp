@@ -80,7 +80,11 @@ WindowsPipe::Err::Err(HANDLE s, const std::string& operation, int error)
 WindowsPipeReceiver::WindowsPipeReceiver()
 	: m_resultPending(false), m_eofReceived(false)
 {
-	m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#ifdef CRYPTOPP_WINRT
+  m_event.AttachHandle(CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE), true);
+#else
+  m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#endif //CRYPTOPP_WINRT
 	CheckAndHandleError("CreateEvent", m_event.HandleValid());
 	memset(&m_overlapped, 0, sizeof(m_overlapped));
 	m_overlapped.hEvent = m_event;
@@ -128,7 +132,11 @@ unsigned int WindowsPipeReceiver::GetReceiveResult()
 	if (m_resultPending)
 	{
 		HANDLE h = GetHandle();
-		if (GetOverlappedResult(h, &m_overlapped, &m_lastResult, false))
+#ifdef CRYPTOPP_WINRT
+		if (GetOverlappedResultEx(h, &m_overlapped, &m_lastResult, 0, false))
+#else
+    if (GetOverlappedResult(h, &m_overlapped, &m_lastResult, false))
+#endif //CRYPTOPP_WINRT
 		{
 			if (m_lastResult == 0)
 				m_eofReceived = true;
@@ -155,7 +163,11 @@ unsigned int WindowsPipeReceiver::GetReceiveResult()
 WindowsPipeSender::WindowsPipeSender()
 	: m_resultPending(false), m_lastResult(0)
 {
-	m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#ifdef CRYPTOPP_WINRT
+  m_event.AttachHandle(CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE), true);
+#else
+  m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#endif //CRYPTOPP_WINRT
 	CheckAndHandleError("CreateEvent", m_event.HandleValid());
 	memset(&m_overlapped, 0, sizeof(m_overlapped));
 	m_overlapped.hEvent = m_event;
@@ -193,7 +205,11 @@ unsigned int WindowsPipeSender::GetSendResult()
 	if (m_resultPending)
 	{
 		HANDLE h = GetHandle();
+#ifdef CRYPTOPP_WINRT
+		BOOL result = GetOverlappedResultEx(h, &m_overlapped, &m_lastResult, 0, false);
+#else
 		BOOL result = GetOverlappedResult(h, &m_overlapped, &m_lastResult, false);
+#endif //CRYPTOPP_WINRT
 		CheckAndHandleError("GetOverlappedResult", result);
 		m_resultPending = false;
 	}

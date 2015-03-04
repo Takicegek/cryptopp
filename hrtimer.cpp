@@ -97,6 +97,7 @@ TimerWord Timer::TicksPerSecond()
 TimerWord ThreadUserTimer::GetCurrentTimerValue()
 {
 #if defined(CRYPTOPP_WIN32_AVAILABLE)
+#ifndef CRYPTOPP_WINRT
 	static bool getCurrentThreadImplemented = true;
 	if (getCurrentThreadImplemented)
 	{
@@ -114,7 +115,8 @@ TimerWord ThreadUserTimer::GetCurrentTimerValue()
 		return now.dwLowDateTime + ((TimerWord)now.dwHighDateTime << 32);
 	}
 GetCurrentThreadNotImplemented:
-	return (TimerWord)clock() * (10*1000*1000 / CLOCKS_PER_SEC);
+#endif //ndef CRYPTOPP_WINRT
+  return (TimerWord)clock() * (10 * 1000 * 1000 / CLOCKS_PER_SEC);
 #elif defined(CRYPTOPP_UNIX_AVAILABLE)
 	tms now;
 	times(&now);

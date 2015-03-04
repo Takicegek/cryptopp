@@ -356,6 +356,11 @@ NAMESPACE_END
 
 #if defined(_WIN32) || defined(__CYGWIN__)
 #define CRYPTOPP_WIN32_AVAILABLE
+
+#ifdef __cplusplus_winrt
+#define CRYPTOPP_WINRT
+#endif //__cplusplus_winrt
+
 #endif
 
 #if defined(__unix__) || defined(__MACH__) || defined(__NetBSD__) || defined(__sun)

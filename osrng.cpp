@@ -13,11 +13,15 @@
 #include "rng.h"
 
 #ifdef CRYPTOPP_WIN32_AVAILABLE
+#ifndef CRYPTOPP_WINRT
 #ifndef _WIN32_WINNT
 #define _WIN32_WINNT 0x0400
 #endif
+#endif //ndef CRYPTOPP_WINRT
 #include <windows.h>
+#ifndef CRYPTOPP_WINRT
 #include <wincrypt.h>
+#endif //ndef CRYPTOPP_WINRT
 #endif
 
 #ifdef CRYPTOPP_UNIX_AVAILABLE
@@ -25,6 +29,12 @@
 #include <fcntl.h>
 #include <unistd.h>
 #endif
+
+#ifdef CRYPTOPP_WINRT
+//#using <Windows.winmd>
+using namespace Windows::Security::Cryptography;
+using namespace Windows::Storage::Streams;
+#endif //CRYPTOPP_WINRT
 
 NAMESPACE_BEGIN(CryptoPP)
 
@@ -47,13 +57,17 @@ OS_RNG_Err::OS_RNG_Err(const std::string &operation)
 
 MicrosoftCryptoProvider::MicrosoftCryptoProvider()
 {
+#ifndef CRYPTOPP_WINRT
 	if(!CryptAcquireContext(&m_hProvider, 0, 0, PROV_RSA_FULL, CRYPT_VERIFYCONTEXT))
 		throw OS_RNG_Err("CryptAcquireContext");
+#endif //ndef CRYPTOPP_WINRT
 }
 
 MicrosoftCryptoProvider::~MicrosoftCryptoProvider()
 {
-	CryptReleaseContext(m_hProvider, 0);
+#ifndef CRYPTOPP_WINRT
+  CryptReleaseContext(m_hProvider, 0);
+#endif //ndef CRYPTOPP_WINRT
 }
 
 #endif
@@ -80,8 +94,16 @@ void NonblockingRng::GenerateBlock(byte *output, size_t size)
 #	ifdef WORKAROUND_MS_BUG_Q258000
 		const MicrosoftCryptoProvider &m_Provider = Singleton<MicrosoftCryptoProvider>().Ref();
 #	endif
+#ifdef CRYPTOPP_WINRT
+    auto buffer = CryptographicBuffer::GenerateRandom(size);
+
+    Platform::Array<byte>^ bytes = nullptr;
+    CryptographicBuffer::CopyToByteArray(buffer, &bytes);
+    memcpy_s(output, size, bytes->Data, bytes->Length);
+#else
 	if (!CryptGenRandom(m_Provider.GetProviderHandle(), (DWORD)size, output))
 		throw OS_RNG_Err("CryptGenRandom");
+#endif //CRYPTOPP_WINRT
 #else
 	while (size)
 	{

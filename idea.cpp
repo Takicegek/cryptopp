@@ -1,6 +1,8 @@
 // idea.cpp - written and placed in the public domain by Wei Dai
 
+#ifndef _WIN32
 #pragma GCC diagnostic ignored "-Wunused"
+#endif //_WIN32
 
 #include "pch.h"
 #include "idea.h"

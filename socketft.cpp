@@ -7,6 +7,10 @@
 
 #include "wait.h"
 
+#ifdef USE_WINDOWS_STYLE_SOCKETS
+#include <WS2tcpip.h>
+#endif //USE_WINDOWS_STYLE_SOCKETS
+
 #ifdef USE_BERKELEY_STYLE_SOCKETS
 #include <errno.h>
 #include <netdb.h>
@@ -79,7 +83,11 @@ void Socket::CloseSocket()
 	if (m_s != INVALID_SOCKET)
 	{
 #ifdef USE_WINDOWS_STYLE_SOCKETS
-		CancelIo((HANDLE) m_s);
+#ifdef CRYPTOPP_WINRT
+    //close socket should clean up any async io operations
+#else
+    CancelIo((HANDLE)m_s);
+#endif //CRYPTOPP_WINRT
 		CheckAndHandleError_int("closesocket", closesocket(m_s));
 #else
 		CheckAndHandleError_int("close", close(m_s));
@@ -99,13 +107,35 @@ void Socket::Bind(unsigned int port, const char *addr)
 		sa.sin_addr.s_addr = htonl(INADDR_ANY);
 	else
 	{
-		unsigned long result = inet_addr(addr);
+#ifdef CRYPTOPP_WINRT
+    wchar_t converted[200];
+    memset(&(converted[0]), 0, sizeof(converted));
+    size_t convertedSize = 0;
+    mbstowcs_s(&convertedSize, &(converted[0]), (sizeof(converted) / sizeof(wchar_t)), addr, _TRUNCATE);
+
+    INT outputSize = sizeof(sa);
+    INT result = WSAStringToAddress(converted, sa.sin_family, NULL, (LPSOCKADDR)&sa, &outputSize);
+    if (0 != result) result = -1;
+#else
+#ifdef USE_WINDOWS_STYLE_SOCKETS
+    unsigned long result = InetPtonA(sa.sin_family, addr, &(sa.sin_addr));
+    if (1 != result) {
+      result = -1;
+    } else {
+      result = sa.sin_addr.s_addr;
+    }
+#else
+    unsigned long result = inet_addr(addr);
+#endif //USE_WINDOWS_STYLE_SOCKETS
+#endif //CRYPTOPP_WINRT
 		if (result == -1)	// Solaris doesn't have INADDR_NONE
 		{
 			SetLastError(SOCKET_EINVAL);
 			CheckAndHandleError_int("inet_addr", SOCKET_ERROR);
 		}
+#ifndef CRYPTOPP_WINRT
 		sa.sin_addr.s_addr = result;
+#endif //CRYPTOPP_WINRT
 	}
 
 	sa.sin_port = htons((u_short)port);
@@ -133,10 +163,55 @@ bool Socket::Connect(const char *addr, unsigned int port)
 	sockaddr_in sa;
 	memset(&sa, 0, sizeof(sa));
 	sa.sin_family = AF_INET;
-	sa.sin_addr.s_addr = inet_addr(addr);
+#ifdef CRYPTOPP_WINRT
+  wchar_t converted[200];
+  memset(&(converted[0]), 0, sizeof(converted));
+  size_t convertedSize = 0;
+  mbstowcs_s(&convertedSize, &(converted[0]), (sizeof(converted) / sizeof(wchar_t)), addr, _TRUNCATE);
+
+  INT outputSize = sizeof(sa);
+  INT result = WSAStringToAddress(converted, sa.sin_family, NULL, (LPSOCKADDR)&sa, &outputSize);
+  if (0 != result) sa.sin_addr.s_addr = -1;
+#else
+#ifdef USE_WINDOWS_STYLE_SOCKETS
+  unsigned long result = InetPtonA(sa.sin_family, addr, &(sa.sin_addr));
+  if (1 != result) {
+    sa.sin_addr.s_addr = -1;
+  }
+#else
+  sa.sin_addr.s_addr = inet_addr(addr);
+#endif USE_WINDOWS_STYLE_SOCKETS
+#endif //CRYPTOPP_WINRT
 
 	if (sa.sin_addr.s_addr == -1)	// Solaris doesn't have INADDR_NONE
 	{
+#ifdef USE_WINDOWS_STYLE_SOCKETS
+    struct addrinfo hints;
+    ZeroMemory(&hints, sizeof(hints));
+    hints.ai_family = AF_UNSPEC;
+    hints.ai_socktype = SOCK_STREAM;
+    hints.ai_protocol = IPPROTO_TCP;
+    struct addrinfo *result = NULL;
+    struct addrinfo *ptr = NULL;
+    int iResult = getaddrinfo(addr, NULL, &hints, &result);
+    if (0 != iResult) {
+      CheckAndHandleError_int("getaddrinfo", SOCKET_ERROR);
+    }
+    for (ptr = result; ptr != NULL; ptr = ptr->ai_next) {
+      switch (ptr->ai_family) {
+      case AF_UNSPEC:
+        break;
+      case AF_INET:
+        sa.sin_addr.s_addr = ((struct sockaddr_in *) ptr->ai_addr)->sin_addr.s_addr;
+        break;
+      case AF_INET6:
+        break;
+      default:
+        break;
+      }
+    }
+    freeaddrinfo(result);
+#else
 		hostent *lphost = gethostbyname(addr);
 		if (lphost == NULL)
 		{
@@ -145,6 +220,7 @@ bool Socket::Connect(const char *addr, unsigned int port)
 		}
 
 		sa.sin_addr.s_addr = ((in_addr *)lphost->h_addr)->s_addr;
+#endif //ndef USE_WINDOWS_STYLE_SOCKETS
 	}
 
 	sa.sin_port = htons((u_short)port);
@@ -312,7 +388,11 @@ void Socket::HandleError(const char *operation) const
 SocketReceiver::SocketReceiver(Socket &s)
 	: m_s(s), m_resultPending(false), m_eofReceived(false)
 {
-	m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#ifdef CRYPTOPP_WINRT
+  m_event.AttachHandle(CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE), true);
+#else 
+  m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#endif //CRYPTOPP_WINRT
 	m_s.CheckAndHandleError("CreateEvent", m_event.HandleValid());
 	memset(&m_overlapped, 0, sizeof(m_overlapped));
 	m_overlapped.hEvent = m_event;
@@ -321,7 +401,11 @@ SocketReceiver::SocketReceiver(Socket &s)
 SocketReceiver::~SocketReceiver()
 {
 #ifdef USE_WINDOWS_STYLE_SOCKETS
+#ifdef CRYPTOPP_WINRT
+  // closing the socket will clear out any async io
+#else
 	CancelIo((HANDLE) m_s.GetSocket());
+#endif //CRYPTOPP_WINRT
 #endif
 }
 
@@ -393,8 +477,11 @@ unsigned int SocketReceiver::GetReceiveResult()
 SocketSender::SocketSender(Socket &s)
 	: m_s(s), m_resultPending(false), m_lastResult(0)
 {
-	m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
+#ifdef CRYPTOPP_WINRT
+  m_event.AttachHandle(CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE), true);
+#else
 	m_s.CheckAndHandleError("CreateEvent", m_event.HandleValid());
+#endif //CRYPTOPP_WINRT
 	memset(&m_overlapped, 0, sizeof(m_overlapped));
 	m_overlapped.hEvent = m_event;
 }
@@ -403,7 +490,11 @@ SocketSender::SocketSender(Socket &s)
 SocketSender::~SocketSender()
 {
 #ifdef USE_WINDOWS_STYLE_SOCKETS
-	CancelIo((HANDLE) m_s.GetSocket());
+#ifdef CRYPTOPP_WINRT
+  // closing the socket will clear out any async io
+#else
+  CancelIo((HANDLE)m_s.GetSocket());
+#endif //CRYPTOPP_WINRT
 #endif
 }
 

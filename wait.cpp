@@ -13,6 +13,16 @@
 #include <unistd.h>
 #endif
 
+#ifdef CRYPTOPP_WINRT
+BOOL Cryptopp_PulseEvent(HANDLE hEvent) {
+  BOOL result = SetEvent(hEvent);
+  if (!result) return result;
+  return ResetEvent(hEvent);
+}
+#define PulseEvent(handle) Cryptopp_PulseEvent(handle)
+#endif //CRYPTOPP_WINRT
+
+
 NAMESPACE_BEGIN(CryptoPP)
 
 unsigned int WaitObjectContainer::MaxWaitObjects()
@@ -123,7 +133,11 @@ WaitObjectContainer::~WaitObjectContainer()
 				threadHandles[i] = thread.threadHandle;
 			}
 			PulseEvent(m_startWaiting);
-			::WaitForMultipleObjects((DWORD)m_threads.size(), threadHandles, TRUE, INFINITE);
+#ifdef CRYPTOPP_WINRT
+			::WaitForMultipleObjectsEx((DWORD)m_threads.size(), threadHandles, TRUE, INFINITE, FALSE);
+#else
+      ::WaitForMultipleObjects((DWORD)m_threads.size(), threadHandles, TRUE, INFINITE);
+#endif //CRYPTOPP_WINRT
 			for (i=0; i<m_threads.size(); i++)
 				CloseHandle(threadHandles[i]);
 			CloseHandle(m_startWaiting);
@@ -151,7 +165,11 @@ DWORD WINAPI WaitingThread(LPVOID lParam)
 	while (true)
 	{
 		thread.waitingToWait = true;
+#ifdef CRYPTOPP_WINRT
+    ::WaitForSingleObjectEx(thread.startWaiting, INFINITE, FALSE);
+#else
 		::WaitForSingleObject(thread.startWaiting, INFINITE);
+#endif //CRYPTOPP_WINRT
 		thread.waitingToWait = false;
 
 		if (thread.terminate)
@@ -163,7 +181,11 @@ DWORD WINAPI WaitingThread(LPVOID lParam)
 		handles[0] = thread.stopWaiting;
 		std::copy(thread.waitHandles, thread.waitHandles+thread.count, handles.begin()+1);
 
-		DWORD result = ::WaitForMultipleObjects((DWORD)handles.size(), &handles[0], FALSE, INFINITE);
+#ifdef CRYPTOPP_WINRT
+    DWORD result = ::WaitForMultipleObjectsEx((DWORD)handles.size(), &handles[0], FALSE, INFINITE, FALSE);
+#else
+    DWORD result = ::WaitForMultipleObjects((DWORD)handles.size(), &handles[0], FALSE, INFINITE);
+#endif // CRYPTOPP_WINRT
 
 		if (result == WAIT_OBJECT_0)
 			continue;	// another thread finished waiting first, so do nothing
@@ -183,9 +205,14 @@ void WaitObjectContainer::CreateThreads(unsigned int count)
 	size_t currentCount = m_threads.size();
 	if (currentCount == 0)
 	{
-		m_startWaiting = ::CreateEvent(NULL, TRUE, FALSE, NULL);
+#ifdef CRYPTOPP_WINRT
+    m_startWaiting = ::CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE);
+    m_stopWaiting = ::CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE);
+#else
+    m_startWaiting = ::CreateEvent(NULL, TRUE, FALSE, NULL);
 		m_stopWaiting = ::CreateEvent(NULL, TRUE, FALSE, NULL);
-	}
+#endif //CRYPTOPP_WINRT
+  }
 
 	if (currentCount < count)
 	{
@@ -260,7 +287,11 @@ bool WaitObjectContainer::Wait(unsigned long milliseconds)
 		ResetEvent(m_stopWaiting);
 		PulseEvent(m_startWaiting);
 
-		DWORD result = ::WaitForSingleObject(m_stopWaiting, milliseconds);
+#ifdef CRYPTOPP_WINRT
+    DWORD result = ::WaitForSingleObjectEx(m_stopWaiting, milliseconds, FALSE);
+#else
+    DWORD result = ::WaitForSingleObject(m_stopWaiting, milliseconds);
+#endif //CRYPTOPP_WINRT
 		if (result == WAIT_OBJECT_0)
 		{
 			if (error == S_OK)
@@ -284,7 +315,11 @@ bool WaitObjectContainer::Wait(unsigned long milliseconds)
 		static unsigned long lastTime = 0;
 		unsigned long timeBeforeWait = t.ElapsedTime();
 #endif
-		DWORD result = ::WaitForMultipleObjects((DWORD)m_handles.size(), &m_handles[0], FALSE, milliseconds);
+#ifdef CRYPTOPP_WINRT
+    DWORD result = ::WaitForMultipleObjectsEx((DWORD)m_handles.size(), &m_handles[0], FALSE, milliseconds, FALSE);
+#else
+    DWORD result = ::WaitForMultipleObjects((DWORD)m_handles.size(), &m_handles[0], FALSE, milliseconds);
+#endif //CRYPTOPP_WINRT
 #if TRACE_WAIT
 		if (milliseconds > 0)
 		{

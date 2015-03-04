@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Label="Globals">
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <ItemsProjectGuid>{cb408c66-7391-49fd-a718-c5a04862c9ca}</ItemsProjectGuid>
+    <ItemsRootNamespace>cryptopp</ItemsRootNamespace>
+    <ItemsProjectName>cryptopp.Shared</ItemsProjectName>
+    <CodeSharingProject>248F659F-DAC5-46E8-AC09-60EC9FC95053</CodeSharingProject>
+  </PropertyGroup>
+  <ItemDefinitionGroup>
+    <ClCompile>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);$(MSBuildThisFileDirectory)</AdditionalIncludeDirectories>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectCapability Include="SourceItemsFromImports" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\3way.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\adler32.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\algebra.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\algparam.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\arc4.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\asn.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\authenc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\base32.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\base64.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\basecode.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\bench.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\bench2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\bfinit.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\blowfish.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\blumshub.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\camellia.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cast.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\casts.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cbcmac.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ccm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\channels.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cmac.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cpu.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\crc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptlib.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptlib_bds.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\datatest.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\default.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\des.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dessp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dh.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dh2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dll.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dlltest.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dsa.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\eax.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ec2n.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\eccrypto.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ecp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\elgamal.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\emsa2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\eprecomp.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\esign.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\files.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\filters.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\fips140.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\fipsalgt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\fipstest.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gcm.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gf256.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gf2n.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gf2_32.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gfpcrypt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gost.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gzip.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\hex.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\hmac.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\hrtimer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ida.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\idea.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\integer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\iterhash.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\luc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mars.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\marss.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\md2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\md4.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\md5.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\misc.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\modes.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mqueue.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mqv.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\nbtheory.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\network.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\oaep.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\osrng.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\panama.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pch.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pkcspad.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\polynomi.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pssr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pubkey.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\queue.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rabin.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\randpool.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rc2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rc5.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rc6.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rdtables.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\regtest.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rijndael.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ripemd.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rng.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rsa.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rw.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\safer.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\salsa.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\seal.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\seed.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\serpent.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sha.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sha3.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\shacal2.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\shark.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sharkbox.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\simple.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\skipjack.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\socketft.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sosemanuk.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\square.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\squaretb.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\strciphr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\tea.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\test.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\tftables.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\tiger.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\tigertab.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\trdlocal.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ttmac.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\twofish.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\validat1.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\validat2.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\validat3.cpp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\vmac.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\wait.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\wake.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\whrlpool.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\winpipes.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\xtr.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\xtrcrypt.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\zdeflate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\zinflate.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\zlib.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\3way.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\adler32.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\aes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\algebra.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\algparam.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\arc4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\argnames.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\asn.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\authenc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\base32.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\base64.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\basecode.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\bench.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\blowfish.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\blumshub.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\camellia.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cast.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cbcmac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ccm.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\channels.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cmac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\config.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cpu.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\crc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptlib.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\default.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\des.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dh.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dh2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dll.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dmac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dsa.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\eax.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ec2n.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\eccrypto.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ecp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\elgamal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\emsa2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\eprecomp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\esign.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\factory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\files.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\filters.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\fips140.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\fltrimpl.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gcm.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gf256.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gf2n.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gf2_32.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gfpcrypt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gost.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\gzip.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\hex.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\hmac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\hrtimer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ida.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\idea.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\integer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\iterhash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\lubyrack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\luc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mars.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\md2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\md4.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\md5.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mdc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\misc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\modarith.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\modes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\modexppc.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mqueue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\mqv.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\nbtheory.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\network.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\nr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\oaep.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\oids.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\osrng.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\panama.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pch.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pkcspad.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\polynomi.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pssr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pubkey.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\pwdbased.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\queue.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rabin.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\randpool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rc2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rc5.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rc6.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\resource.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rijndael.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ripemd.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rng.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rsa.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\rw.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\safer.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\salsa.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\seal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\secblock.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\seckey.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\seed.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\serpent.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\serpentp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sha.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sha3.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\shacal2.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\shark.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\simple.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\skipjack.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\smartptr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\socketft.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\sosemanuk.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\square.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\stdcpp.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\strciphr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\tea.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\tiger.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\trdlocal.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\trunhash.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\ttmac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\twofish.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\validate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\vmac.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\wait.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\wake.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\whrlpool.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\winpipes.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\words.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\xtr.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\xtrcrypt.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\zdeflate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\zinflate.h" />
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\..\zlib.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\adhoc.cpp.proto">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptdll.dsp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptdll.vcproj">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest.dsp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest.dsw">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest.sln">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest.vcproj">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest_bds.bdsgroup">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest_bds.bdsproj">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptest_bds.bpf">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptlib.dsp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptlib.vcproj">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptlib_bds.bdsproj">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dlltest.dsp">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\dlltest.vcproj">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Doxyfile">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\GNUmakefile">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\x64dll.asm" />
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\..\x64masm.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\..\cryptopp.rc">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\..\..\License.txt">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\..\..\Readme.txt">
+      <ExcludedFromBuild>true</ExcludedFromBuild>
+    </Text>
+  </ItemGroup>
+</Project>

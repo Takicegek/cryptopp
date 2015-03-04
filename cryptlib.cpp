@@ -2,7 +2,9 @@
 
 #include "pch.h"
 
+#ifndef _WIN32
 #pragma GCC diagnostic ignored "-Wunused"
+#endif //ndef _WIN32
 
 #ifndef CRYPTOPP_IMPORTS
 
