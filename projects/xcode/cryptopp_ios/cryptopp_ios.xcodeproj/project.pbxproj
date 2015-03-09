@@ -979,7 +979,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0460;
-				ORGANIZATIONNAME = "SMB Phone Inc.";
+				ORGANIZATIONNAME = "Hookflash Inc.";
 			};
 			buildConfigurationList = 0066863516C9F58000259F81 /* Build configuration list for PBXProject "cryptopp_ios" */;
 			compatibilityVersion = "Xcode 3.2";
