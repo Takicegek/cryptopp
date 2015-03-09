@@ -180,7 +180,7 @@ bool Socket::Connect(const char *addr, unsigned int port)
   }
 #else
   sa.sin_addr.s_addr = inet_addr(addr);
-#endif USE_WINDOWS_STYLE_SOCKETS
+#endif //USE_WINDOWS_STYLE_SOCKETS
 #endif //CRYPTOPP_WINRT
 
 	if (sa.sin_addr.s_addr == -1)	// Solaris doesn't have INADDR_NONE
