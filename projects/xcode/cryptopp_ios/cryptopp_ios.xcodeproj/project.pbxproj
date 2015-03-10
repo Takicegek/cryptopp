@@ -7,16 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		006687C616C9F5D800259F81 /* 3way.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066864C16C9F5D600259F81 /* 3way.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		006687C616C9F5D800259F81 /* 3way.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066864C16C9F5D600259F81 /* 3way.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-const-variable"; }; };
 		006687C816C9F5D800259F81 /* adler32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865016C9F5D600259F81 /* adler32.cpp */; };
 		006687C916C9F5D800259F81 /* algebra.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865316C9F5D600259F81 /* algebra.cpp */; };
 		006687CA16C9F5D800259F81 /* algparam.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865516C9F5D600259F81 /* algparam.cpp */; };
 		006687CB16C9F5D800259F81 /* arc4.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865816C9F5D600259F81 /* arc4.cpp */; };
-		006687CC16C9F5D800259F81 /* asn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865B16C9F5D600259F81 /* asn.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		006687CC16C9F5D800259F81 /* asn.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865B16C9F5D600259F81 /* asn.cpp */; settings = {COMPILER_FLAGS = "-Wno-switch"; }; };
 		006687CD16C9F5D800259F81 /* authenc.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865D16C9F5D600259F81 /* authenc.cpp */; };
 		006687CE16C9F5D800259F81 /* base32.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066865F16C9F5D600259F81 /* base32.cpp */; };
 		006687CF16C9F5D800259F81 /* base64.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066866116C9F5D600259F81 /* base64.cpp */; };
-		006687D016C9F5D800259F81 /* basecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066866316C9F5D600259F81 /* basecode.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		006687D016C9F5D800259F81 /* basecode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066866316C9F5D600259F81 /* basecode.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-value"; }; };
 		006687D316C9F5D800259F81 /* bfinit.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066866816C9F5D600259F81 /* bfinit.cpp */; };
 		006687D416C9F5D800259F81 /* blowfish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066866916C9F5D700259F81 /* blowfish.cpp */; };
 		006687D516C9F5D800259F81 /* blumshub.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066866B16C9F5D700259F81 /* blumshub.cpp */; };
@@ -32,8 +32,8 @@
 		006687DF16C9F5D800259F81 /* cryptlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066868816C9F5D700259F81 /* cryptlib.cpp */; };
 		006687E016C9F5D800259F81 /* cryptlib_bds.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066868D16C9F5D700259F81 /* cryptlib_bds.cpp */; };
 		006687E116C9F5D800259F81 /* datatest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066868F16C9F5D700259F81 /* datatest.cpp */; };
-		006687E216C9F5D800259F81 /* default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869016C9F5D700259F81 /* default.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		006687E316C9F5D800259F81 /* des.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869216C9F5D700259F81 /* des.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		006687E216C9F5D800259F81 /* default.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869016C9F5D700259F81 /* default.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-variable"; }; };
+		006687E316C9F5D800259F81 /* des.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869216C9F5D700259F81 /* des.cpp */; settings = {COMPILER_FLAGS = "-Wno-deprecated-register"; }; };
 		006687E416C9F5D800259F81 /* dessp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869416C9F5D700259F81 /* dessp.cpp */; };
 		006687E516C9F5D800259F81 /* dh.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869516C9F5D700259F81 /* dh.cpp */; };
 		006687E616C9F5D800259F81 /* dh2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066869716C9F5D700259F81 /* dh2.cpp */; };
@@ -46,9 +46,9 @@
 		006687EE16C9F5D800259F81 /* elgamal.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686AA16C9F5D700259F81 /* elgamal.cpp */; };
 		006687EF16C9F5D800259F81 /* emsa2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686AC16C9F5D700259F81 /* emsa2.cpp */; };
 		006687F016C9F5D800259F81 /* eprecomp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686AE16C9F5D700259F81 /* eprecomp.cpp */; };
-		006687F116C9F5D800259F81 /* esign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B016C9F5D700259F81 /* esign.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		006687F116C9F5D800259F81 /* esign.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B016C9F5D700259F81 /* esign.cpp */; settings = {COMPILER_FLAGS = "-Wno-shift-op-parentheses"; }; };
 		006687F216C9F5D800259F81 /* files.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B316C9F5D700259F81 /* files.cpp */; };
-		006687F316C9F5D800259F81 /* filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B516C9F5D700259F81 /* filters.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		006687F316C9F5D800259F81 /* filters.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B516C9F5D700259F81 /* filters.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-value -Wno-tautological-compare"; }; };
 		006687F416C9F5D800259F81 /* fips140.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B716C9F5D700259F81 /* fips140.cpp */; };
 		006687F516C9F5D800259F81 /* fipsalgt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686B916C9F5D700259F81 /* fipsalgt.cpp */; };
 		006687F716C9F5D800259F81 /* gcm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686BC16C9F5D700259F81 /* gcm.cpp */; };
@@ -60,7 +60,7 @@
 		006687FD16C9F5D800259F81 /* gzip.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686C916C9F5D700259F81 /* gzip.cpp */; };
 		006687FE16C9F5D800259F81 /* hex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686CB16C9F5D700259F81 /* hex.cpp */; };
 		006687FF16C9F5D800259F81 /* hmac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686CD16C9F5D700259F81 /* hmac.cpp */; };
-		0066880016C9F5D800259F81 /* hrtimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686CF16C9F5D700259F81 /* hrtimer.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		0066880016C9F5D800259F81 /* hrtimer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686CF16C9F5D700259F81 /* hrtimer.cpp */; settings = {COMPILER_FLAGS = "-Wno-tautological-constant-out-of-range-compare"; }; };
 		0066880116C9F5D800259F81 /* ida.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686D116C9F5D700259F81 /* ida.cpp */; };
 		0066880216C9F5D800259F81 /* idea.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686D316C9F5D700259F81 /* idea.cpp */; };
 		0066880316C9F5D800259F81 /* integer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686D516C9F5D700259F81 /* integer.cpp */; };
@@ -75,8 +75,8 @@
 		0066880C16C9F5D800259F81 /* modes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686EA16C9F5D700259F81 /* modes.cpp */; };
 		0066880D16C9F5D800259F81 /* mqueue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686ED16C9F5D700259F81 /* mqueue.cpp */; };
 		0066880E16C9F5D800259F81 /* mqv.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686EF16C9F5D700259F81 /* mqv.cpp */; };
-		0066880F16C9F5D800259F81 /* nbtheory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686F116C9F5D700259F81 /* nbtheory.cpp */; };
-		0066881016C9F5D800259F81 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686F316C9F5D700259F81 /* network.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		0066880F16C9F5D800259F81 /* nbtheory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686F116C9F5D700259F81 /* nbtheory.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
+		0066881016C9F5D800259F81 /* network.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686F316C9F5D700259F81 /* network.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-variable"; }; };
 		0066881116C9F5D800259F81 /* oaep.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686F616C9F5D700259F81 /* oaep.cpp */; };
 		0066881216C9F5D900259F81 /* osrng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686F916C9F5D700259F81 /* osrng.cpp */; };
 		0066881316C9F5D900259F81 /* panama.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006686FB16C9F5D700259F81 /* panama.cpp */; };
@@ -87,15 +87,15 @@
 		0066881816C9F5D900259F81 /* pubkey.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066870516C9F5D700259F81 /* pubkey.cpp */; };
 		0066881916C9F5D900259F81 /* queue.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066870816C9F5D700259F81 /* queue.cpp */; };
 		0066881A16C9F5D900259F81 /* rabin.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066870A16C9F5D700259F81 /* rabin.cpp */; };
-		0066881B16C9F5D900259F81 /* randpool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066870C16C9F5D700259F81 /* randpool.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		0066881B16C9F5D900259F81 /* randpool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066870C16C9F5D700259F81 /* randpool.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-variable"; }; };
 		0066881C16C9F5D900259F81 /* rc2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066870E16C9F5D700259F81 /* rc2.cpp */; };
 		0066881D16C9F5D900259F81 /* rc5.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871016C9F5D700259F81 /* rc5.cpp */; };
 		0066881E16C9F5D900259F81 /* rc6.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871216C9F5D700259F81 /* rc6.cpp */; };
 		0066881F16C9F5D900259F81 /* rdtables.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871416C9F5D700259F81 /* rdtables.cpp */; };
 		0066882116C9F5D900259F81 /* rijndael.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871816C9F5D700259F81 /* rijndael.cpp */; };
-		0066882216C9F5D900259F81 /* ripemd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871A16C9F5D700259F81 /* ripemd.cpp */; };
-		0066882316C9F5D900259F81 /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871C16C9F5D700259F81 /* rng.cpp */; };
-		0066882416C9F5D900259F81 /* rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871E16C9F5D700259F81 /* rsa.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		0066882216C9F5D900259F81 /* ripemd.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871A16C9F5D700259F81 /* ripemd.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
+		0066882316C9F5D900259F81 /* rng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871C16C9F5D700259F81 /* rng.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
+		0066882416C9F5D900259F81 /* rsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066871E16C9F5D700259F81 /* rsa.cpp */; settings = {COMPILER_FLAGS = "-Wno-multiple-move-vbase"; }; };
 		0066882516C9F5D900259F81 /* rw.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066872016C9F5D700259F81 /* rw.cpp */; };
 		0066882616C9F5D900259F81 /* safer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066872216C9F5D700259F81 /* safer.cpp */; };
 		0066882716C9F5D900259F81 /* salsa.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066872416C9F5D700259F81 /* salsa.cpp */; };
@@ -108,7 +108,7 @@
 		0066882E16C9F5D900259F81 /* sharkbox.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873516C9F5D800259F81 /* sharkbox.cpp */; };
 		0066882F16C9F5D900259F81 /* simple.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873616C9F5D800259F81 /* simple.cpp */; };
 		0066883016C9F5D900259F81 /* skipjack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873816C9F5D800259F81 /* skipjack.cpp */; };
-		0066883116C9F5D900259F81 /* socketft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873B16C9F5D800259F81 /* socketft.cpp */; };
+		0066883116C9F5D900259F81 /* socketft.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873B16C9F5D800259F81 /* socketft.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
 		0066883216C9F5D900259F81 /* sosemanuk.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873D16C9F5D800259F81 /* sosemanuk.cpp */; };
 		0066883316C9F5D900259F81 /* square.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066873F16C9F5D800259F81 /* square.cpp */; };
 		0066883416C9F5D900259F81 /* squaretb.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0066874116C9F5D800259F81 /* squaretb.cpp */; };
@@ -121,14 +121,14 @@
 		0066883C16C9F5D900259F81 /* ttmac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687A716C9F5D800259F81 /* ttmac.cpp */; };
 		0066883D16C9F5D900259F81 /* twofish.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687A916C9F5D800259F81 /* twofish.cpp */; };
 		0066884116C9F5D900259F81 /* vmac.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687AF16C9F5D800259F81 /* vmac.cpp */; };
-		0066884216C9F5D900259F81 /* wait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687B116C9F5D800259F81 /* wait.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
-		0066884316C9F5D900259F81 /* wake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687B316C9F5D800259F81 /* wake.cpp */; settings = {COMPILER_FLAGS = "-w"; }; };
+		0066884216C9F5D900259F81 /* wait.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687B116C9F5D800259F81 /* wait.cpp */; };
+		0066884316C9F5D900259F81 /* wake.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687B316C9F5D800259F81 /* wake.cpp */; settings = {COMPILER_FLAGS = "-Wno-unused-variable"; }; };
 		0066884416C9F5D900259F81 /* whrlpool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687B516C9F5D800259F81 /* whrlpool.cpp */; };
 		0066884516C9F5D900259F81 /* winpipes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687B716C9F5D800259F81 /* winpipes.cpp */; };
 		0066884816C9F5D900259F81 /* xtr.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687BC16C9F5D800259F81 /* xtr.cpp */; };
 		0066884916C9F5D900259F81 /* xtrcrypt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687BE16C9F5D800259F81 /* xtrcrypt.cpp */; };
 		0066884A16C9F5D900259F81 /* zdeflate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C016C9F5D800259F81 /* zdeflate.cpp */; };
-		0066884B16C9F5D900259F81 /* zinflate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C216C9F5D800259F81 /* zinflate.cpp */; };
+		0066884B16C9F5D900259F81 /* zinflate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C216C9F5D800259F81 /* zinflate.cpp */; settings = {COMPILER_FLAGS = "-Wno-shorten-64-to-32"; }; };
 		0066884C16C9F5D900259F81 /* zlib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 006687C416C9F5D800259F81 /* zlib.cpp */; };
 		00B1F2D417F9F8C10062BE55 /* sha3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 00B1F2D317F9F8C10062BE55 /* sha3.cpp */; };
 /* End PBXBuildFile section */
