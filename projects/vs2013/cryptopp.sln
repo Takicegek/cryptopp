@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "cryptopp", "cryptopp", "{0CD8420E-052D-4269-9202-39E531F1CFD6}"
-EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp.Shared", "cryptopp\cryptopp.Shared\cryptopp.Shared.vcxitems", "{CB408C66-7391-49FD-A718-C5A04862C9CA}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp.Windows", "cryptopp\cryptopp.Windows\cryptopp.Windows.vcxproj", "{81D2EEEC-2D4C-4225-824B-A7DE05BB6557}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp.WindowsPhone", "cryptopp\cryptopp.WindowsPhone\cryptopp.WindowsPhone.vcxproj", "{57718455-F1CD-468C-B888-9C5814BB5F4E}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp.Win32", "cryptopp.Win32\cryptopp.Win32.vcxproj", "{F73D1443-6E8D-4B5B-9F0A-CAB724692A5A}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "cryptopp.Win32", "cryptopp\cryptopp.Win32\cryptopp.Win32.vcxproj", "{F73D1443-6E8D-4B5B-9F0A-CAB724692A5A}"
 EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
@@ -62,11 +60,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{CB408C66-7391-49FD-A718-C5A04862C9CA} = {0CD8420E-052D-4269-9202-39E531F1CFD6}
-		{81D2EEEC-2D4C-4225-824B-A7DE05BB6557} = {0CD8420E-052D-4269-9202-39E531F1CFD6}
-		{57718455-F1CD-468C-B888-9C5814BB5F4E} = {0CD8420E-052D-4269-9202-39E531F1CFD6}
-		{F73D1443-6E8D-4B5B-9F0A-CAB724692A5A} = {0CD8420E-052D-4269-9202-39E531F1CFD6}
 	EndGlobalSection
 EndGlobal

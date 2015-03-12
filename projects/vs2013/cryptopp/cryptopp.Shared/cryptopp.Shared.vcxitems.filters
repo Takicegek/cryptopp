@@ -1,0 +1,888 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="cryptopp">
+      <UniqueIdentifier>{3b930762-d014-408d-9746-e2c541d933d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\3way.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\adler32.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\algebra.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\algparam.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\arc4.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\asn.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\authenc.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\base32.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\base64.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\basecode.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\bench.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\bench2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\bfinit.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\blowfish.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\blumshub.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\camellia.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cast.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\casts.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cbcmac.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ccm.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\channels.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cmac.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cpu.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\crc.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptlib.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptlib_bds.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\datatest.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\default.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\des.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\dessp.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\dh.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\dh2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\dll.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\dlltest.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\dsa.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\eax.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ec2n.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\eccrypto.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ecp.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\elgamal.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\emsa2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\eprecomp.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\esign.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\files.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\filters.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\fips140.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\fipsalgt.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\fipstest.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gcm.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gf2_32.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gf2n.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gf256.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gfpcrypt.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gost.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\gzip.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\hex.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\hmac.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\hrtimer.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ida.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\idea.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\integer.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\iterhash.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\luc.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\mars.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\marss.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\md2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\md4.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\md5.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\misc.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\modes.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\mqueue.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\mqv.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\nbtheory.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\network.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\oaep.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\osrng.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\panama.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\pch.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\pkcspad.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\polynomi.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\pssr.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\pubkey.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\queue.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rabin.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\randpool.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rc2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rc5.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rc6.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rdtables.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\regtest.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rijndael.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ripemd.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rng.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rsa.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\rw.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\safer.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\salsa.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\seal.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\seed.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\serpent.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\sha.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\sha3.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\shacal2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\shark.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\sharkbox.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\simple.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\skipjack.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\socketft.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\sosemanuk.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\square.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\squaretb.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\strciphr.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tea.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\test.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tftables.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tiger.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tigertab.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\trdlocal.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ttmac.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\twofish.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\validat1.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\validat2.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\validat3.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\vmac.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\wait.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\wake.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\whrlpool.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\winpipes.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\xtr.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\xtrcrypt.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\zdeflate.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\zinflate.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\zlib.cpp">
+      <Filter>cryptopp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\3way.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\adler32.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\aes.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\algebra.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\algparam.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\arc4.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\argnames.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\asn.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\authenc.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\base32.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\base64.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\basecode.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\bench.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\blowfish.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\blumshub.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\camellia.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\cast.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\cbcmac.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ccm.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\channels.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\cmac.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\config.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\cpu.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\crc.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptlib.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\default.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\des.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\dh.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\dh2.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\dll.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\dmac.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\dsa.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\eax.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ec2n.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\eccrypto.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ecp.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\elgamal.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\emsa2.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\eprecomp.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\esign.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\factory.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\files.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\filters.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\fips140.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\fltrimpl.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gcm.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gf2_32.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gf2n.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gf256.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gfpcrypt.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gost.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\gzip.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\hex.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\hmac.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\hrtimer.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ida.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\idea.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\integer.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\iterhash.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\lubyrack.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\luc.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\mars.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\md2.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\md4.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\md5.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\mdc.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\misc.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\modarith.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\modes.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\modexppc.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\mqueue.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\mqv.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\nbtheory.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\network.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\nr.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\oaep.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\oids.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\osrng.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\panama.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\pch.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\pkcspad.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\polynomi.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\pssr.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\pubkey.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\pwdbased.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\queue.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rabin.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\randpool.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rc2.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rc5.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rc6.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\resource.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rijndael.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ripemd.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rng.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rsa.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\rw.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\safer.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\salsa.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\seal.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\secblock.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\seckey.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\seed.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\serpent.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\serpentp.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\sha.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\sha3.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\shacal2.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\shark.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\simple.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\skipjack.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\smartptr.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\socketft.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\sosemanuk.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\square.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\stdcpp.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\strciphr.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\tea.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\tiger.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\trdlocal.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\trunhash.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\ttmac.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\twofish.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\validate.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\vmac.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\wait.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\wake.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\whrlpool.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\winpipes.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\words.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\xtr.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\xtrcrypt.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\zdeflate.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\zinflate.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+    <ClInclude Include="$(MSBuildThisFileDirectory)..\..\..\..\zlib.h">
+      <Filter>cryptopp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\adhoc.cpp.proto">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptdll.dsp">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptdll.vcproj">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest.dsp">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest.dsw">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest.sln">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest.vcproj">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest_bds.bdsgroup">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest_bds.bdsproj">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptest_bds.bpf">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptlib.dsp">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptlib.vcproj">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptlib_bds.bdsproj">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\dlltest.dsp">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\dlltest.vcproj">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\Doxyfile">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\GNUmakefile">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\x64dll.asm">
+      <Filter>cryptopp</Filter>
+    </None>
+    <None Include="$(MSBuildThisFileDirectory)..\..\..\..\x64masm.asm">
+      <Filter>cryptopp</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\cryptopp.rc">
+      <Filter>cryptopp</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\..\License.txt">
+      <Filter>cryptopp</Filter>
+    </Text>
+    <Text Include="$(MSBuildThisFileDirectory)..\..\..\..\Readme.txt">
+      <Filter>cryptopp</Filter>
+    </Text>
+  </ItemGroup>
+</Project>
