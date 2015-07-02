@@ -480,8 +480,9 @@ SocketSender::SocketSender(Socket &s)
 #ifdef CRYPTOPP_WINRT
   m_event.AttachHandle(CreateEventEx(NULL, NULL, CREATE_EVENT_MANUAL_RESET, EVENT_MODIFY_STATE), true);
 #else
-	m_s.CheckAndHandleError("CreateEvent", m_event.HandleValid());
+  m_event.AttachHandle(CreateEvent(NULL, true, false, NULL), true);
 #endif //CRYPTOPP_WINRT
+  m_s.CheckAndHandleError("CreateEvent", m_event.HandleValid());
 	memset(&m_overlapped, 0, sizeof(m_overlapped));
 	m_overlapped.hEvent = m_event;
 }
