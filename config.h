@@ -1,6 +1,11 @@
 #ifndef CRYPTOPP_CONFIG_H
 #define CRYPTOPP_CONFIG_H
 
+#if _MSC_VER >= 1400 && !defined(__INTEL_COMPILER)
+	#define CRYPTOPP_DISABLE_ASM 
+	#define CRYPTOPP_DISABLE_SSE2 
+#endif
+
 // ***************** Important Settings ********************
 
 // define this if running on a big-endian CPU

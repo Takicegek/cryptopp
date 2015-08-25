@@ -152,7 +152,8 @@ static word AtomicInverseModPower2(word A)
 #else
 	#define Declare2Words(x)			dword x;
 	#if _MSC_VER >= 1400 && !defined(__INTEL_COMPILER)
-		#define MultiplyWords(p, a, b)		p = __emulu(a, b);
+		//#define MultiplyWords(p, a, b)		p = __emulu(a, b);
+		#define MultiplyWords(p, a, b)        p = (dword)a*b;
 	#else
 		#define MultiplyWords(p, a, b)		p = (dword)a*b;
 	#endif
