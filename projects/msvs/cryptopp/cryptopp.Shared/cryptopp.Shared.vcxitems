@@ -140,7 +140,9 @@
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tftables.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tiger.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\tigertab.cpp" />
-    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\trdlocal.cpp" />
+    <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\trdlocal.cpp">
+      <DisableSpecificWarnings>4297</DisableSpecificWarnings>
+    </ClCompile>
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\ttmac.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\twofish.cpp" />
     <ClCompile Include="$(MSBuildThisFileDirectory)..\..\..\..\validat1.cpp">

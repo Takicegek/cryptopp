@@ -10,6 +10,11 @@
 #include "smartptr.h"
 #include "secblock.h"
 
+#ifdef _WIN32
+#pragma warning(push)
+#pragma warning(disable:4297)
+#endif //_WIN32
+
 NAMESPACE_BEGIN(CryptoPP)
 
 //! used to pass byte array input as part of a NameValuePairs object
@@ -399,5 +404,9 @@ AlgorithmParameters MakeParameters(const char *name, const T &value, bool throwI
 #define CRYPTOPP_SET_FUNCTION_ENTRY2(name1, name2)	(Name::name1(), Name::name2(), &ThisClass::Set##name1##And##name2)
 
 NAMESPACE_END
+
+#ifdef _WIN32
+#pragma warning(pop)
+#endif //_WIN32
 
 #endif
